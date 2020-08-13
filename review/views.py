@@ -105,7 +105,7 @@ class StreamingView(View):
     def get(self, request): 
         url  = request.GET.get('path') 
         video =url.split('/')[-1]
-        path = '/home/ubuntu/'+video
+        path = '/home/ubuntu/tripadvisor'+video
         self.s3_client.download_file(AWS_STORAGE_BUCKET_NAME,video,path)
         range_header = request.META.get('HTTP_RANGE','').strip()
         range_match  = range_re.match(range_header)
