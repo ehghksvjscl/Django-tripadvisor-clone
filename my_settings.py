@@ -3,14 +3,13 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "tripadvisor",
         "USER": "root",
-        "PASSWORD": "admin",
-        "HOST": "localhost",
+        "PASSWORD": "rktn4156",
+        "HOST": "drmozart.cl2mk0mgzle0.us-east-2.rds.amazonaws.com",
         "PORT": "3306",
         "TEST": {"CHARSET": "utf8", "COLLATION": "utf8_general_ci",},
         "OPTIONS": {"init_command": 'SET sql_mode="STRICT_TRANS_TABLES"'},
     }
 }
-
 
 SECRET_KEY = "tripadvisor"
 
